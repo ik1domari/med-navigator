@@ -1,5 +1,10 @@
 function App() {
-	return <img src='src\img\main-background.png'></img>;
+	return (
+		<>
+			<div className='main__background' />
+			<div className='main__hand' />
+		</>
+	);
 }
 
 export default App;

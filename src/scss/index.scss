@@ -76,8 +76,22 @@ body {
 	overflow-x: hidden;
 }
 
-img {
-	width: 100vw;
-	height: 50vh;
-	object-fit: cover;
+.main {
+	&__background {
+		width: 100vw;
+		height: 90vh;
+		position: relative;
+		background-size: cover;
+		background-image: url("../img/main-background.png");
+	}
+	&__hand {
+		width: 35vw;
+		height: 80vh;
+		position: absolute;
+		right: 0;
+		bottom: 10vh;
+		background-size: contain 80vh;
+		background-repeat: no-repeat;
+		background-image: url("../img/main-hand.png");
+	}
 }
