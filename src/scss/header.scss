@@ -1,0 +1,23 @@
+.header {
+	width: 100vw;
+	height: 20vh;
+	position: fixed;
+	z-index: 100;
+	background: transparent;
+	&__logo {
+		border: 2px solid rgba(248, 248, 248, 0.2);
+		border-radius: 12px;
+		letter-spacing: 1.5px;
+		font-weight: 600;
+		text-align: center;
+		width: 10vw;
+		padding: 1vw 6.4vw;
+		margin-left: 6vw;
+		margin-top: 3vh;
+		font-size: clamp(10px, 0.75vw, 12px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
+}
