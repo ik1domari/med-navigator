@@ -6,6 +6,8 @@
 	background: transparent;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	padding: 0 6vw;
 	&__logo {
 		border: 2px solid rgba(248, 248, 248, 0.2);
 		border-radius: 12px;
@@ -14,7 +16,6 @@
 		text-align: center;
 		width: 10vw;
 		padding: clamp(10px, 2vw, 15px) clamp(80px, 15vw, 100px);
-		margin-left: 6vw;
 		font-size: clamp(10px, 0.75vw, 12px);
 		display: flex;
 		justify-content: center;
@@ -26,12 +27,12 @@
 		justify-content: space-around;
 		align-items: center;
 		padding: 5vw;
-		font-size: 20px;
+		font-size: clamp(8px, 1.6vw, 20px);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		&link {
-			margin-left: 6vw;
+			margin-left: 3vw;
 			position: relative;
 			&:hover {
 				&::before {
@@ -55,9 +56,9 @@
 		}
 	}
 	&__link {
-		font-size: 24px;
+		font-size: clamp(10px, 2vw, 24px);
 		position: relative;
-		left: 10vw;
+		justify-self: flex-end;
 		svg {
 			margin-left: 10px;
 		}
@@ -79,6 +80,20 @@
 			transform: scaleX(0);
 			transform-origin: right;
 			transition: transform 0.25s ease-in-out;
+		}
+	}
+	&__burger {
+		display: none;
+	}
+	@media (max-width: 877px) {
+		justify-content: space-between;
+		padding: 0 6vw;
+		&__nav,
+		&__link {
+			display: none;
+		}
+		&__burger {
+			display: block;
 		}
 	}
 }
