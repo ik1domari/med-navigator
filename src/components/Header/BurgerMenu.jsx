@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderLink from "./HeaderLink";
 
 export default function BurgerMenu({ setBurgerOpen }) {
 	return (
@@ -23,6 +24,38 @@ export default function BurgerMenu({ setBurgerOpen }) {
 						/>
 					</svg>
 				</button>
+				<ul className='burger__list'>
+					<li>
+						<HeaderLink
+							title='О ПРОДУКТЕ'
+							dest='#about'
+							className='burger__list__link'
+							isIcon={false}
+						/>
+					</li>
+					<li>
+						<HeaderLink
+							title='ФУНКЦИИ БОТА'
+							dest='#functional'
+							className='burger__list__link'
+							isIcon={false}
+						/>
+					</li>
+					<li>
+						<HeaderLink
+							title='ЦЕНА'
+							dest='#'
+							className='burger__list__link'
+							isIcon={false}
+						/>
+					</li>
+				</ul>
+				<HeaderLink
+					title='КОНТАКТЫ'
+					dest='#'
+					className='burger__link'
+					isIcon={true}
+				/>
 			</div>
 		</aside>
 	);

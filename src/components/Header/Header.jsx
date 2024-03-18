@@ -1,19 +1,19 @@
 import React from "react";
 import BurgerMenu from "./BurgerMenu";
-import HeaderLink from "../HeaderLink";
+import HeaderLink from "./HeaderLink";
 
 export default function Header() {
 	const [burgerOpen, setBurgerOpen] = React.useState(false);
 	const links = [
 		{
 			title: "О ПРОДУКТЕ",
-			dest: "#",
+			dest: "#about",
 			className: "header__navlink",
 			isIcon: false,
 		},
 		{
 			title: "ФУНКЦИИ БОТА",
-			dest: "#",
+			dest: "#functional",
 			className: "header__navlink",
 			isIcon: false,
 		},
@@ -30,6 +30,7 @@ export default function Header() {
 							dest={element.dest}
 							className={element.className}
 							isIcon={element.isIcon}
+							key={element.title}
 						/>
 					);
 				})}
@@ -48,7 +49,7 @@ export default function Header() {
 						width='50px'
 						height='50px'
 						viewBox='0 0 24 24'
-						ariaLabelledby='hamburgerIconTitle'
+						aria-labelledby='hamburgerIconTitle'
 						stroke='#fff'
 						strokeWidth='1.8'
 						strokeLinecap='square'

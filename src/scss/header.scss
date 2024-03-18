@@ -1,13 +1,14 @@
 .header {
 	width: 100vw;
 	height: 10vh;
-	position: fixed;
+	position: absolute;
 	z-index: 10;
 	background: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 6vw;
+	white-space: nowrap;
 	&__logo {
 		border: 2px solid rgba(248, 248, 248, 0.2);
 		border-radius: 12px;
@@ -21,6 +22,7 @@
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
+		white-space: normal;
 	}
 	&__nav {
 		display: flex;
@@ -85,7 +87,7 @@
 	&__burger {
 		display: none;
 	}
-	@media (max-width: 877px) {
+	@media (max-width: 954px) {
 		justify-content: space-between;
 		padding: 0 6vw;
 		&__nav,

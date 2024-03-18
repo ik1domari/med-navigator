@@ -2,6 +2,8 @@
 @import "reset";
 @import "header";
 @import "burgerMenu";
+@import "content";
+@import "functional";
 
 body {
 	background-color: #0e1213;
@@ -11,9 +13,11 @@ body {
 }
 
 * {
+	letter-spacing: 0.22vw;
+	text-transform: uppercase;
 	&::selection,
 	&::-moz-selection {
-		background: #47dbb6c4;
+		background: rgba(116, 230, 255, 0.5);
 	}
 }
 
@@ -52,8 +56,6 @@ body {
 		margin-top: 33vh;
 		margin-left: 6vw;
 		font-size: clamp(16px, 5.8vw, 50px);
-		text-transform: uppercase;
-		letter-spacing: 3px;
 		&__transparent {
 			opacity: 0.5;
 		}
@@ -67,17 +69,19 @@ body {
 		color: #fff;
 		outline: 2px solid rgba(255, 255, 255, 0.2);
 		background: transparent;
-		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 		transition: box-shadow 0.25s ease-in-out;
 		div {
 			position: absolute;
-			letter-spacing: 2px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			svg {
-				width: clamp(10px, 2vw, 25px);
-				padding-top: 2px;
+				width: clamp(5px, 2vw, 25px);
+				padding: 0;
 				margin-left: 5px;
 			}
 		}

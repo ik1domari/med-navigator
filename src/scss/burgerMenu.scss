@@ -21,6 +21,8 @@
 		backdrop-filter: blur(10px);
 	}
 	&__content {
+		width: 60vw;
+		height: 70vh;
 		position: absolute;
 		z-index: 5;
 	}
@@ -34,6 +36,42 @@
 		svg {
 			width: 5vw;
 			height: 2vh;
+		}
+	}
+	&__list {
+		font-size: clamp(16px, 4vw, 25px);
+		position: absolute;
+		top: 20vh;
+		right: 5vw;
+		text-align: right;
+
+		&__link {
+			display: flex;
+			align-items: center;
+			justify-content: right;
+			margin-top: 2vh;
+			&::before {
+				content: "";
+				display: block;
+				width: 7px;
+				height: 7px;
+				background-color: #d9d9d9;
+				opacity: 0.5;
+				border-radius: 50%;
+				position: absolute;
+				right: -4vw;
+			}
+		}
+	}
+	&__link {
+		position: absolute;
+		bottom: 10vh;
+		right: 5vw;
+		font-size: clamp(16px, 4vw, 25px);
+		svg {
+			position: absolute;
+			top: 25%;
+			right: -4vw;
 		}
 	}
 }

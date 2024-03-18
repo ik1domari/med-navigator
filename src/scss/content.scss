@@ -1,0 +1,93 @@
+.content {
+	position: absolute;
+	top: 90vh;
+	width: 100%;
+	padding: 0 6vw 6vh;
+	background: url("../img/bg.png") repeat;
+	background-size: cover;
+	&__heading {
+		font-size: clamp(18px, 4vw, 50px);
+		font-weight: 600;
+		width: 35vw;
+	}
+	#about {
+		white-space: nowrap;
+	}
+	#functional {
+		svg {
+			width: clamp(18px, 3vw, 30px);
+			margin-left: 15px;
+			padding: 0;
+		}
+	}
+	&__head {
+		margin-top: 10vh;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__line {
+			height: 2px;
+			width: 30vw;
+			background-color: rgba(217, 217, 217, 0.2);
+		}
+		&__copyright {
+			font-size: clamp(10px, 2vw, 25px);
+		}
+	}
+	&__quote {
+		margin-top: 5vh;
+		font-weight: 500;
+		blockquote {
+			width: 80vw;
+			padding: 6vh 4vw;
+			font-size: clamp(12px, 2vw, 22px);
+			background-color: rgba(197, 197, 197, 0.05);
+			border-bottom: 3px solid #fff;
+			border-radius: 17px 17px 0 0;
+		}
+		&__text {
+			font-size: clamp(12px, 2vw, 22px);
+			font-weight: 500;
+			margin: 5vh 4vw;
+		}
+	}
+	&__functional {
+		margin-top: 8vh;
+		&__cards {
+			margin-top: 8vh;
+		}
+		&__head {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	&__note {
+		font-size: clamp(10px, 2vw, 25px);
+		font-weight: 500;
+		background-color: rgba(47, 47, 47, 0.2);
+		outline: 2px solid rgba(255, 255, 255, 0.2);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&__text,
+		&__img {
+			padding: 0 2vw;
+		}
+		&__img {
+			background-color: #d9d9d9;
+			box-shadow: -10px 0 10px rgba(217, 217, 217, 0.2);
+			svg {
+				width: clamp(18px, 3vw, 30px);
+			}
+		}
+	}
+	&__advantages {
+		margin-top: 8vh;
+		&__head {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
