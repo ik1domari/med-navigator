@@ -7,13 +7,13 @@ function App() {
 			<Header />
 			<main className='main'>
 				<section className='main__background'>
-					<h2 className='main__heading'>
+					<h1 className='main__heading'>
 						<strong>Наш чат-бот</strong>
 						<span className='main__heading__transparent'>
 							{" "}
 							служит медицинским ассистентом для ваших пациентов.
 						</span>
-					</h2>
+					</h1>
 					<button className='main__btn'>
 						<div>
 							ЗАКАЗАТЬ РАЗРАБОТКУ

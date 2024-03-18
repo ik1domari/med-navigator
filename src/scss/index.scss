@@ -4,6 +4,7 @@
 @import "burgerMenu";
 @import "content";
 @import "functional";
+@import "advantage";
 
 body {
 	background-color: #0e1213;
@@ -23,22 +24,22 @@ body {
 
 .main {
 	width: 100vw;
-	height: 90vh;
+	height: 100vh;
 	overflow-x: hidden;
 	&__background {
 		width: 100vw;
-		height: 90vh;
+		height: 100vh;
 		background-size: cover;
 		background-image: url("../img/main-background.png");
 		position: absolute;
 	}
 	&__hand {
-		$handWidth: clamp(115px, 40vw, 600px);
-		$handHeight: clamp(100px, 60vh, 800px);
+		$handWidth: clamp(115px, 40vw, 800px);
+		$handHeight: clamp(100px, 70vh, 1000px);
 		width: $handWidth;
 		height: $handHeight;
 		position: absolute;
-		bottom: 10vh;
+		bottom: 0;
 		right: 0;
 		background-repeat: no-repeat;
 		background-size: $handWidth $handHeight;
@@ -62,10 +63,11 @@ body {
 	}
 	&__btn {
 		width: 45vw;
-		padding: 36px 52px;
+		padding: 3vw;
 		margin-left: 6vw;
 		margin-top: 3vh;
-		font-size: clamp(10px, 2vw, 25px);
+		font-size: clamp(8px, 1.5vw, 25px);
+		white-space: nowrap;
 		color: #fff;
 		outline: 2px solid rgba(255, 255, 255, 0.2);
 		background: transparent;
@@ -74,6 +76,12 @@ body {
 		align-items: center;
 		position: relative;
 		transition: box-shadow 0.25s ease-in-out;
+		@media (max-width: 871px) {
+			padding: 4vw;
+		}
+		@media (max-width: 500px) {
+			padding: 5vw;
+		}
 		div {
 			position: absolute;
 			display: flex;

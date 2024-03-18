@@ -1,0 +1,25 @@
+.advantage {
+	display: flex;
+	margin-top: 3vh;
+	&__number {
+		font-size: clamp(16px, 4vw, 50px);
+		width: 10vw;
+		height: 10vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 500;
+		background-color: rgba(217, 217, 217, 0.01);
+		border: 2px solid #424242;
+	}
+	&__text {
+		font-size: clamp(8px, 1.5vw, 25px);
+		border-bottom: 2px solid #424242;
+		width: 25vw;
+		&__text {
+			margin-top: 0.5vh;
+			margin-left: 2vw;
+			width: 80vw;
+		}
+	}
+}
