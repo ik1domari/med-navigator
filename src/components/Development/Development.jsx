@@ -1,0 +1,95 @@
+import React from "react";
+
+export default function Development() {
+	return (
+		<div className='development'>
+			<h2 className='content__heading'>
+				Разработка чат-бота
+				<svg
+					width='78'
+					height='48'
+					viewBox='0 0 78 48'
+					fill='none'
+					xmlns='http://www.w3.org/2000/svg'
+				>
+					<rect
+						x='1'
+						y='1'
+						width='46'
+						height='46'
+						stroke='#F1F1F1'
+						stroke-width='2'
+					/>
+					<rect
+						x='16'
+						y='1'
+						width='46'
+						height='46'
+						stroke='#F1F1F1'
+						stroke-width='2'
+					/>
+					<rect
+						x='31'
+						y='1'
+						width='46'
+						height='46'
+						stroke='#F1F1F1'
+						stroke-width='2'
+					/>
+					<rect
+						x='31'
+						y='1'
+						width='16'
+						height='46'
+						fill='#F1F1F1'
+						stroke='#F1F1F1'
+						stroke-width='2'
+					/>
+					<rect
+						x='1'
+						y='1'
+						width='46'
+						height='46'
+						stroke='#F1F1F1'
+						stroke-opacity='0.3'
+						stroke-width='2'
+					/>
+					<rect
+						x='16'
+						y='1'
+						width='46'
+						height='46'
+						stroke='#F1F1F1'
+						stroke-opacity='0.3'
+						stroke-width='2'
+					/>
+					<rect
+						x='31'
+						y='1'
+						width='46'
+						height='46'
+						stroke='#F1F1F1'
+						stroke-opacity='0.3'
+						stroke-width='2'
+					/>
+					<rect
+						x='30'
+						width='18'
+						height='48'
+						fill='#F1F1F1'
+						fill-opacity='0.2'
+					/>
+					<rect
+						x='31'
+						y='1'
+						width='16'
+						height='46'
+						stroke='#F1F1F1'
+						stroke-opacity='0.3'
+						stroke-width='2'
+					/>
+				</svg>
+			</h2>
+		</div>
+	);
+}
