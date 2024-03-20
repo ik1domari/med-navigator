@@ -15,18 +15,18 @@
 	}
 	#functional {
 		svg {
-			position: absolute;
 			width: clamp(5px, 2vw, 45px);
-			margin-top: 4px;
-			margin-left: 15px;
-			padding: 0;
+			height: clamp(5px, 2vw, 45px);
+			margin-top: 1vw;
+			margin-left: 1vw;
 		}
 	}
 	#price {
 		svg {
 			width: clamp(24px, 5vw, 48px);
-			height: clamp(16px, 3vh, 32px);
-			margin-top: 2vh;
+			height: clamp(16px, 3vw, 32px);
+			margin-top: 2vw;
+			margin-left: 1vw;
 			overflow: visible;
 		}
 	}
@@ -38,7 +38,7 @@
 		&__line {
 			flex-grow: 1;
 			margin-right: 5vw;
-			height: 2px;
+			height: 0.35vw;
 			width: 30vw;
 			background-color: rgba(217, 217, 217, 0.2);
 		}
@@ -54,7 +54,7 @@
 			padding: 6vh 4vw;
 			font-size: clamp(12px, 2vw, 22px);
 			background-color: rgba(197, 197, 197, 0.05);
-			border-bottom: 3px solid #fff;
+			border-bottom: 0.35vw solid #fff;
 			border-radius: 17px 17px 0 0;
 		}
 		&__text {
@@ -66,7 +66,7 @@
 	&__functional {
 		margin-top: 8vh;
 		&__cards {
-			margin-top: 8vh;
+			margin-top: 2vh;
 		}
 		&__head {
 			display: flex;
@@ -84,13 +84,14 @@
 		justify-content: center;
 		&__text,
 		&__img {
-			padding: 1vh 2vw;
+			padding: 2vw;
 		}
 		&__img {
 			background-color: #d9d9d9;
 			box-shadow: -10px 0 10px rgba(217, 217, 217, 0.2);
 			svg {
 				width: clamp(18px, 3vw, 30px);
+				height: clamp(18px, 3vw, 30px);
 			}
 		}
 	}

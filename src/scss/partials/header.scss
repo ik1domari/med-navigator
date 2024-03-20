@@ -21,7 +21,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		cursor: pointer;
 		white-space: normal;
 	}
 	&__nav {
@@ -61,6 +60,7 @@
 		font-size: clamp(10px, 2vw, 24px);
 		position: relative;
 		justify-self: flex-end;
+		color: #fff;
 		svg {
 			margin-left: 10px;
 		}

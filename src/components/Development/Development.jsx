@@ -131,7 +131,11 @@ export default function Development() {
 				</div>
 			</div>
 			<div className='development__blocks'>
-				<DevBlock isBlack={false} />
+				<DevBlock
+					isBlack={false}
+					isIcon={false}
+					text='Однако, для обеспечения непрерывной поддержки и развития чат-бота, мы заключаем договор на годовое обслуживание с ежемесячной оплатой от 25 тыс. руб. Это обеспечит Вас:'
+				/>
 				<Carousel
 					className='development__slider'
 					infiniteLoop
@@ -161,11 +165,27 @@ export default function Development() {
 						)
 					}
 				>
-					<DevSlide isBlack={true} />
-					<DevSlide isBlack={false} />
-					<DevSlide isBlack={true} />
+					<DevSlide
+						index={1}
+						text='Полной поддержкой: Включает в себя непрерывное техническое обслуживание и обновление функционала, избавляя вас от необходимости держать собственный IT-штат.'
+						isBlack={true}
+					/>
+					<DevSlide
+						index={2}
+						text='Непрерывному улучшению: Мы регулярно внедряем новые функции, используя лучшие практики и опыт, накопленный в ходе работы с другими организациями.'
+						isBlack={false}
+					/>
+					<DevSlide
+						index={3}
+						text='Полная ответственность: Мы берем на себя решение всех вопросов, связанных с чат-ботом, включая устранение неполадок и урегулирование споров с пользователями.'
+						isBlack={true}
+					/>
 				</Carousel>
-				<DevBlock isBlack={true} />
+				<DevBlock
+					isBlack={true}
+					isIcon={true}
+					text='В соответствии с данными правилами, наша цель — обеспечить эффективность работы чат-бота в вашей медицинской организации, стремясь к продолжению нашего сотрудничества.'
+				/>
 			</div>
 		</section>
 	);

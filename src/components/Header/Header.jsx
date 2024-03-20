@@ -1,27 +1,26 @@
 import React from "react";
 import BurgerMenu from "./BurgerMenu";
 import HeaderLink from "./HeaderLink";
+import { AppContext } from "../../App";
 
 export default function Header() {
 	const [burgerOpen, setBurgerOpen] = React.useState(false);
+	const { setOpenModal } = React.useContext(AppContext);
 	const links = [
 		{
 			title: "О ПРОДУКТЕ",
 			dest: "#about",
 			className: "header__navlink",
-			isIcon: false,
 		},
 		{
 			title: "ФУНКЦИИ БОТА",
 			dest: "#functional",
 			className: "header__navlink",
-			isIcon: false,
 		},
 		{
 			title: "ЦЕНА",
 			dest: "#price",
 			className: "header__navlink",
-			isIcon: false,
 		},
 	];
 	return (
@@ -34,18 +33,27 @@ export default function Header() {
 							title={element.title}
 							dest={element.dest}
 							className={element.className}
-							isIcon={element.isIcon}
 							key={element.title}
 						/>
 					);
 				})}
 			</nav>
-			<HeaderLink
-				title='КОНТАКТЫ'
-				dest='#'
-				className='header__link'
-				isIcon={true}
-			/>
+			<button className='header__link' onClick={() => setOpenModal(true)}>
+				Контакты
+				<svg
+					width='16'
+					height='16'
+					viewBox='0 0 22 21'
+					fill='none'
+					xmlns='http://www.w3.org/2000/svg'
+				>
+					<path
+						d='M1 1L21 20M21 20V1M21 20H1'
+						stroke='#EFEFEF'
+						strokeWidth='2'
+					/>
+				</svg>
+			</button>
 			{!burgerOpen && (
 				<button onClick={() => setBurgerOpen(true)} className='header__burger'>
 					<svg

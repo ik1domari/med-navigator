@@ -1,15 +1,16 @@
 .footer {
-	margin-top: 10vh;
 	width: 88vw;
-	height: 7vh;
+	height: 8vh;
+	margin-top: 5vh;
 	&__container {
+		margin-top: 5vh;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		@media (max-width: 700px) {
 			display: grid;
-			grid-template-columns: 2fr 2fr 1fr;
-			grid-template-rows: repeat(2, 1fr);
+			grid-template-columns: 2fr 2fr;
+			grid-template-rows: repeat(2, 4vh);
 			grid-auto-flow: column;
 			gap: 2vw;
 		}
@@ -27,15 +28,15 @@
 		font-size: clamp(8px, 1.5vw, 20px);
 		font-weight: 500;
 		background-color: rgba(47, 47, 47, 0.2);
-		outline: 0.25vw solid rgba(255, 255, 255, 0.2);
+		border: 0.25vw solid rgba(255, 255, 255, 0.2);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		padding: 1vw 2vw;
 		transition: all 0.2s linear;
 		svg {
-			width: clamp(10px, 2vw, 20px);
-			height: clamp(10px, 2vw, 20px);
+			width: clamp(10px, 1vw, 25px);
+			height: clamp(10px, 1vw, 25px);
 		}
 		&:hover {
 			background-color: rgba(47, 47, 47, 0.8);

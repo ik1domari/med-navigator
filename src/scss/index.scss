@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import "reset";
-@import "header";
-@import "burgerMenu";
-@import "content";
-@import "functional";
-@import "advantage";
-@import "development";
-@import "science";
-@import "stages";
-@import "partners";
-@import "footer";
+@import "partials/reset";
+@import "partials/header";
+@import "partials/burgerMenu";
+@import "partials/content";
+@import "partials/functional";
+@import "partials/advantage";
+@import "partials/development";
+@import "partials/science";
+@import "partials/stages";
+@import "partials/partners";
+@import "partials/footer";
+@import "partials/modal";
 
 body {
 	background-color: #0e1213;
@@ -50,10 +51,10 @@ body {
 		background-size: $handWidth $handHeight;
 		background-image: url("../img/main-hand.png");
 		@media (max-width: 1080px) {
-			right: -25vw;
+			right: 0;
 			bottom: 20vh;
 			height: 50vh;
-			width: 60vw;
+			width: 35vw;
 			background-size: 60vw 50vh;
 		}
 	}

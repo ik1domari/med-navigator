@@ -15,11 +15,31 @@ export default function Stages() {
 				</div>
 			</div>
 			<div className='stages__blocks'>
-				<StagesBlock />
-				<StagesBlock />
-				<StagesBlock />
-				<StagesBlock />
-				<StagesBlock />
+				<StagesBlock
+					index={1}
+					title='Изучение организационной структуры'
+					image='/stages/1.svg'
+				/>
+				<StagesBlock
+					index={2}
+					title='Сбор данных о функционировании медицинской организации.'
+					image='/stages/2.svg'
+				/>
+				<StagesBlock
+					index={3}
+					title='Создание первоначального образца чат-бота.'
+					image='/stages/3.svg'
+				/>
+				<StagesBlock
+					index={4}
+					title='Проведение испытаний разработанного продукта.'
+					image='/stages/4.svg'
+				/>
+				<StagesBlock
+					index={5}
+					title='Официальный запуск чат-бота в эксплуатацию'
+					image='/stages/5.svg'
+				/>
 			</div>
 			<CTA />
 		</section>

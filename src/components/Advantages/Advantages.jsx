@@ -2,6 +2,7 @@ import React from "react";
 import AdvantageItem from "./AdvantageItem";
 
 export default function Advantages() {
+	const [showFull, setShowFull] = React.useState(false);
 	return (
 		<section id='advantages' className='content__advantages'>
 			<div className='content__advantages__head'>
@@ -36,28 +37,77 @@ export default function Advantages() {
 				</div>
 			</div>
 			<div className='advantages'>
-				<AdvantageItem />
-				<AdvantageItem />
-				<AdvantageItem />
+				<AdvantageItem
+					index={1}
+					text='Снижает нагрузку на колл-центр и регистратуру'
+				/>
+				<AdvantageItem
+					index={2}
+					text='Улучшение информирования законных представителей'
+				/>
+				<AdvantageItem
+					index={3}
+					text='Оптимизирует маршрутизацию пациентов внутри медицинской организации'
+				/>
+				{showFull && (
+					<>
+						<AdvantageItem
+							index={4}
+							text='Улучшаем доступ к первичной медико-санитарной помощи'
+						/>
+						<AdvantageItem
+							index={5}
+							text='Точка контакта с пациентами: проведение массового или таргетированного информирования'
+						/>
+					</>
+				)}
 			</div>
-			<button className='functional__btn'>
-				СМОТРЕТЬ ДАЛЕЕ
-				<svg
-					role='img'
-					xmlns='http://www.w3.org/2000/svg'
-					viewBox='0 0 24 24'
-					aria-labelledby='arrowRightIconTitle'
-					stroke='#efefef'
-					strokeWidth='2'
-					strokeLinecap='square'
-					strokeLinejoin='miter'
-					fill='none'
-					color='#efefef'
-				>
-					{" "}
-					<path d='M15 18l6-6-6-6' /> <path d='M3 12h17' />{" "}
-					<path strokeLinecap='round' d='M21 12h-1' />{" "}
-				</svg>
+			<button
+				className='functional__btn'
+				onClick={() => setShowFull(!showFull)}
+			>
+				{showFull ? (
+					<>
+						Свернуть
+						<svg
+							style={{ transform: "rotate(-90deg)" }}
+							role='img'
+							xmlns='http://www.w3.org/2000/svg'
+							viewBox='0 0 24 24'
+							aria-labelledby='arrowRightIconTitle'
+							stroke='#efefef'
+							strokeWidth='2'
+							strokeLinecap='square'
+							strokeLinejoin='miter'
+							fill='none'
+							color='#efefef'
+						>
+							{" "}
+							<path d='M15 18l6-6-6-6' /> <path d='M3 12h17' />{" "}
+							<path strokeLinecap='round' d='M21 12h-1' />{" "}
+						</svg>
+					</>
+				) : (
+					<>
+						Смотреть далее
+						<svg
+							role='img'
+							xmlns='http://www.w3.org/2000/svg'
+							viewBox='0 0 24 24'
+							aria-labelledby='arrowRightIconTitle'
+							stroke='#efefef'
+							strokeWidth='2'
+							strokeLinecap='square'
+							strokeLinejoin='miter'
+							fill='none'
+							color='#efefef'
+						>
+							{" "}
+							<path d='M15 18l6-6-6-6' /> <path d='M3 12h17' />{" "}
+							<path strokeLinecap='round' d='M21 12h-1' />{" "}
+						</svg>
+					</>
+				)}
 			</button>
 		</section>
 	);

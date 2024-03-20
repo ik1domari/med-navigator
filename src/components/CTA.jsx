@@ -1,8 +1,10 @@
 import React from "react";
+import { AppContext } from "../App";
 
 export default function CTA() {
+	const { setOpenModal } = React.useContext(AppContext);
 	return (
-		<button className='main__btn'>
+		<button className='main__btn' onClick={() => setOpenModal(true)}>
 			<div>
 				ЗАКАЗАТЬ РАЗРАБОТКУ
 				<svg

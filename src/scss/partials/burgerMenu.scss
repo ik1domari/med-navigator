@@ -68,9 +68,12 @@
 		bottom: 10vh;
 		right: 5vw;
 		font-size: clamp(16px, 4vw, 25px);
+		color: #fff;
 		svg {
+			width: clamp(12px, 3vw, 25px);
+			height: clamp(12px, 3vw, 25px);
 			position: absolute;
-			top: 25%;
+			top: 0.5vw;
 			right: -4vw;
 		}
 	}

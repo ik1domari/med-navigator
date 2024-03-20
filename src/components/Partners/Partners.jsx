@@ -10,9 +10,19 @@ export default function Partners() {
 				</h2>
 			</div>
 			<div className='partners__cards'>
-				<Partner />
-				<Partner />
-				<Partner />
+				<Partner
+					title='«Фонд содействия развитию малых форм предприятий в научно-технической сфере»'
+					image='/partners/fsi.png'
+				/>
+				<Partner
+					title='ФГБОУ ВО Тюменский ГМУ
+Минздрава России'
+					image='/partners/tmu.png'
+				/>
+				<Partner
+					title='ГАУЗ ТО «Городская поликлиника No 5»'
+					image='/partners/sz.png'
+				/>
 			</div>
 		</section>
 	);

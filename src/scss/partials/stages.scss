@@ -7,33 +7,38 @@
 		overflow-y: hidden;
 	}
 	&__block {
-		// position: relative;
+		width: 25vw;
+		margin: 5vw;
+		margin-right: 0;
+		&:first-of-type {
+			margin-left: 0;
+		}
 		&__number {
-			opacity: 0.5;
-			font-size: clamp(8px, 2vw, 25px);
+			color: rgba(255, 255, 255, 0.5);
+			font-size: clamp(12px, 2vw, 25px);
 			margin-left: 2px;
-			width: 2vw;
-			height: 2vw;
+			width: 3vw;
+			height: 3vw;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			background-color: rgba(217, 217, 217, 0.01);
-			outline: 2px solid #424242;
+			outline: 0.35vw solid #424242;
 			border-radius: 0 7px 0 0;
 		}
 		&__line {
-			border-bottom: 2px solid #424242;
-			width: 10vw;
+			border-bottom: 0.35vw solid #424242;
+			width: 15vw;
 		}
 		&__text {
 			margin-top: 2vw;
-			font-size: clamp(8px, 1vw, 18px);
+			font-size: clamp(8px, 2vw, 24px);
 		}
 		&__img {
 			width: 5vw;
 			height: 5vw;
 			position: relative;
-			left: 4vw;
+			left: 5vw;
 			top: 1vw;
 		}
 	}

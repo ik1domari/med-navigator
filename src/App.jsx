@@ -1,3 +1,4 @@
+import { useState, createContext } from "react";
 import Header from "./components/Header/Header";
 import Functional from "./components/Functional/Functional";
 import Advantages from "./components/Advantages/Advantages";
@@ -7,9 +8,14 @@ import Stages from "./components/Stages/Stages";
 import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
 import CTA from "./components/CTA";
+import ContactModal from "./components/ContactModal";
+
+export const AppContext = createContext({});
 function App() {
+	const [openModal, setOpenModal] = useState(false);
 	return (
-		<>
+		<AppContext.Provider value={{ setOpenModal }}>
+			{openModal && <ContactModal />}
 			<Header />
 			<main className='main'>
 				<section className='main__background'>
@@ -54,7 +60,7 @@ function App() {
 					<Footer />
 				</section>
 			</main>
-		</>
+		</AppContext.Provider>
 	);
 }
 
