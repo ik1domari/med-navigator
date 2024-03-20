@@ -1,0 +1,32 @@
+.science {
+	margin-top: 8vh;
+	&__blocks {
+		margin-top: 3vh;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	&__block {
+		width: 25vw;
+		height: 25vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(47, 47, 47, 0.2);
+		outline: 3px solid rgba(255, 255, 255, 0.2);
+		font-size: clamp(30px, 10vw, 100px);
+		font-weight: 600;
+		position: relative;
+		transition: all 0.1s linear;
+		&::after {
+			content: "";
+			width: 1.5vw;
+			height: 1.5vw;
+			border-radius: 50%;
+			background-color: #ffffff;
+			position: absolute;
+			right: 1vw;
+			top: 1vw;
+		}
+	}
+}

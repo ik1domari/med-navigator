@@ -1,0 +1,40 @@
+.stages {
+	margin-top: 8vh;
+	&__blocks {
+		margin-top: 3vh;
+		display: flex;
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	&__block {
+		// position: relative;
+		&__number {
+			opacity: 0.5;
+			font-size: clamp(8px, 2vw, 25px);
+			margin-left: 2px;
+			width: 2vw;
+			height: 2vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgba(217, 217, 217, 0.01);
+			outline: 2px solid #424242;
+			border-radius: 0 7px 0 0;
+		}
+		&__line {
+			border-bottom: 2px solid #424242;
+			width: 10vw;
+		}
+		&__text {
+			margin-top: 2vw;
+			font-size: clamp(8px, 1vw, 18px);
+		}
+		&__img {
+			width: 5vw;
+			height: 5vw;
+			position: relative;
+			left: 4vw;
+			top: 1vw;
+		}
+	}
+}

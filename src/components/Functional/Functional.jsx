@@ -3,7 +3,7 @@ import FunctionalCard from "./FunctionalCard";
 
 export default function Functional() {
 	return (
-		<div className='content__functional'>
+		<section className='content__functional'>
 			<div className='content__functional__head'>
 				<h2 id='functional' className='content__heading'>
 					ФУНКЦИОНАЛ В ЧАТ-БОТЕ
@@ -61,6 +61,6 @@ export default function Functional() {
 					</svg>
 				</button>
 			</div>
-		</div>
+		</section>
 	);
 }

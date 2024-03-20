@@ -1,6 +1,7 @@
 .advantage {
 	display: flex;
 	margin-top: 3vh;
+	font-weight: 500;
 	&__number {
 		font-size: clamp(16px, 4vw, 50px);
 		width: 10vw;
@@ -8,7 +9,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-weight: 500;
 		background-color: rgba(217, 217, 217, 0.01);
 		border: 2px solid #424242;
 	}

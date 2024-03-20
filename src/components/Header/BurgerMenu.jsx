@@ -44,7 +44,7 @@ export default function BurgerMenu({ setBurgerOpen }) {
 					<li>
 						<HeaderLink
 							title='ЦЕНА'
-							dest='#'
+							dest='#price'
 							className='burger__list__link'
 							isIcon={false}
 						/>

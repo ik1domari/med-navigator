@@ -3,7 +3,7 @@ import AdvantageItem from "./AdvantageItem";
 
 export default function Advantages() {
 	return (
-		<div className='content__advantages'>
+		<section id='advantages' className='content__advantages'>
 			<div className='content__advantages__head'>
 				<h2 className='content__heading'>Чат-бот в поликлинике</h2>
 				<div className='content__note'>
@@ -59,6 +59,6 @@ export default function Advantages() {
 					<path strokeLinecap='round' d='M21 12h-1' />{" "}
 				</svg>
 			</button>
-		</div>
+		</section>
 	);
 }

@@ -11,10 +11,10 @@ export default function FunctionalCard({ index }) {
 				/>
 			</div>
 			<div className='functional__card__text'>
-				<div className='functional__card__text__heading'>
+				<h3 className='functional__card__text__heading'>
 					<span className='functional__card__text__braces'>//</span> Основное
 					меню
-				</div>
+				</h3>
 				<div className='functional__card__text__content'>
 					"Для пациентов доступна основная информация о поликлинике в этих
 					разделах"
@@ -24,10 +24,10 @@ export default function FunctionalCard({ index }) {
 	) : (
 		<div className='functional__card'>
 			<div className='functional__card__text'>
-				<div className='functional__card__text__heading'>
+				<h3 className='functional__card__text__heading'>
 					<span className='functional__card__text__braces'>//</span> Основное
 					меню
-				</div>
+				</h3>
 				<div className='functional__card__text__content'>
 					"Для пациентов доступна основная информация о поликлинике в этих
 					разделах"

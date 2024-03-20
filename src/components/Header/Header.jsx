@@ -17,7 +17,12 @@ export default function Header() {
 			className: "header__navlink",
 			isIcon: false,
 		},
-		{ title: "ЦЕНА", dest: "#", className: "header__navlink", isIcon: false },
+		{
+			title: "ЦЕНА",
+			dest: "#price",
+			className: "header__navlink",
+			isIcon: false,
+		},
 	];
 	return (
 		<header className='header'>
