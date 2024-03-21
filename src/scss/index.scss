@@ -57,6 +57,9 @@ body {
 			width: 35vw;
 			background-size: 60vw 50vh;
 		}
+		@media (max-width: 530px) {
+			background-size: 60vw 30vh;
+		}
 	}
 	&__heading {
 		width: 40vw;
