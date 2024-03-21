@@ -13,6 +13,11 @@ import ContactModal from "./components/ContactModal";
 export const AppContext = createContext({});
 function App() {
 	const [openModal, setOpenModal] = useState(false);
+	if (openModal) {
+		document.body.style.overflowY = "hidden";
+	} else {
+		document.body.style.overflowY = "auto";
+	}
 	return (
 		<AppContext.Provider value={{ setOpenModal }}>
 			{openModal && <ContactModal />}
