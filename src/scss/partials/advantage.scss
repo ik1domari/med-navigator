@@ -4,8 +4,8 @@
 	font-weight: 500;
 	&__number {
 		font-size: clamp(16px, 4vw, 50px);
-		width: 10vw;
-		height: 10vw;
+		width: clamp(25px, 10vw, 100px);
+		height: clamp(40px, 10vw, 100px);
 		display: flex;
 		justify-content: center;
 		align-items: center;

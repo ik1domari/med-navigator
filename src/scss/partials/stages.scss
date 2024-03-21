@@ -7,7 +7,7 @@
 		overflow-y: hidden;
 	}
 	&__block {
-		width: 25vw;
+		width: clamp(100px, 25vw, 300px);
 		margin: 5vw;
 		margin-right: 0;
 		&:first-of-type {
@@ -15,7 +15,7 @@
 		}
 		&__number {
 			color: rgba(255, 255, 255, 0.5);
-			font-size: clamp(12px, 2vw, 25px);
+			font-size: clamp(8px, 2vw, 25px);
 			margin-left: 2px;
 			width: 3vw;
 			height: 3vw;
@@ -35,8 +35,8 @@
 			font-size: clamp(8px, 2vw, 24px);
 		}
 		&__img {
-			width: 5vw;
-			height: 5vw;
+			width: clamp(20px, 5vw, 100px);
+			height: clamp(20px, 5vw, 100px);
 			position: relative;
 			left: 5vw;
 			top: 1vw;
