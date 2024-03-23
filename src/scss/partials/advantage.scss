@@ -1,11 +1,11 @@
 .advantage {
 	display: flex;
-	margin-top: 3vh;
+	margin-top: 4vh;
 	font-weight: 500;
 	&__number {
-		font-size: clamp(16px, 4vw, 50px);
-		width: clamp(25px, 10vw, 100px);
-		height: clamp(40px, 10vw, 100px);
+		font-size: clamp(25px, 4vw, 50px);
+		width: clamp(50px, 10vw, 100px);
+		height: clamp(80px, 10vw, 100px);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -13,13 +13,13 @@
 		border: 2px solid #424242;
 	}
 	&__text {
-		font-size: clamp(10px, 2vw, 25px);
+		font-size: clamp(14px, 2vw, 25px);
 		border-bottom: 2px solid #424242;
 		width: 25vw;
 		&__text {
 			margin-top: 0.5vh;
 			margin-left: 2vw;
-			width: 80vw;
+			width: 70vw;
 		}
 	}
 }

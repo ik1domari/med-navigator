@@ -71,10 +71,10 @@ body {
 		}
 	}
 	&__btn {
-		width: 45vw;
+		width: clamp(50px, 60vw, 600px);
 		padding: 3vw;
 		margin-top: 3vh;
-		font-size: clamp(8px, 1.5vw, 25px);
+		font-size: clamp(14px, 1.5vw, 25px);
 		font-weight: 500;
 		white-space: nowrap;
 		color: #fff;

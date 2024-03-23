@@ -43,6 +43,7 @@ export default function FooterContacts({ isInFooter }) {
 			<a href='https://t.me/smilyanin' target='_blank' className='footer__btn'>
 				{/* Telegram */}
 				<svg
+					className='footer__btn__social'
 					width='34'
 					height='30'
 					viewBox='0 0 34 30'
@@ -62,6 +63,7 @@ export default function FooterContacts({ isInFooter }) {
 			>
 				{/* VK */}
 				<svg
+					className='footer__btn__social'
 					width='32'
 					height='19'
 					viewBox='0 0 32 19'

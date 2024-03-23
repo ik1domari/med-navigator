@@ -1,7 +1,7 @@
 .science {
 	margin-top: 8vh;
 	&__blocks {
-		margin-top: 8vh;
+		margin-top: 4vh;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
@@ -14,7 +14,7 @@
 		justify-content: center;
 		background-color: rgba(47, 47, 47, 0.2);
 		outline: 0.33vw solid rgba(255, 255, 255, 0.2);
-		font-size: clamp(30px, 10vw, 100px);
+		font-size: clamp(50px, 10vw, 100px);
 		font-weight: 600;
 		position: relative;
 		transition: background 0.2s ease-in-out;
@@ -41,8 +41,8 @@
 			}
 		}
 		img {
-			width: clamp(30px, 10vw, 100px);
-			height: clamp(30px, 10vw, 100px);
+			width: clamp(50px, 10vw, 100px);
+			height: clamp(50px, 10vw, 100px);
 		}
 	}
 }

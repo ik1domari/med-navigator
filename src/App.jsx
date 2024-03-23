@@ -9,18 +9,25 @@ import Partners from "./components/Partners/Partners";
 import Footer from "./components/Footer/Footer";
 import CTA from "./components/CTA";
 import ContactModal from "./components/ContactModal";
+import ImageModal from "./components/ImageModal";
 
 export const AppContext = createContext({});
+
 function App() {
 	const [openModal, setOpenModal] = useState(false);
-	if (openModal) {
+	const [openImage, setOpenImage] = useState({ open: false, image: "" });
+	if (openModal || openImage.open) {
 		document.body.style.overflowY = "hidden";
 	} else {
 		document.body.style.overflowY = "auto";
 	}
+
 	return (
-		<AppContext.Provider value={{ setOpenModal }}>
+		<AppContext.Provider
+			value={{ setOpenModal, setOpenImage, openModal, openImage }}
+		>
 			{openModal && <ContactModal />}
+			{openImage.open && <ImageModal image={openImage.image} />}
 			<Header />
 			<main className='main'>
 				<section className='main__background'>
