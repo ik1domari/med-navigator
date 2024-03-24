@@ -1,4 +1,5 @@
 .stages {
+	margin-top: 10vh;
 	&__blocks {
 		margin-top: 3vh;
 		display: flex;
@@ -6,7 +7,7 @@
 		overflow-y: hidden;
 	}
 	&__block {
-		width: clamp(200px, 25vw, 300px);
+		width: clamp(200px, 25vw, 280px);
 		margin: 3vw 10vw;
 		margin-right: 0;
 		&:first-of-type {
@@ -14,10 +15,9 @@
 		}
 		&__number {
 			color: rgba(255, 255, 255, 0.5);
-			font-size: clamp(20px, 3vw, 36px);
-			margin-left: 2px;
-			width: 5vw;
-			height: 5vw;
+			font-size: clamp(14px, 3vw, 24px);
+			width: 4.5vw;
+			height: 4.5vw;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -31,11 +31,11 @@
 		}
 		&__text {
 			margin-top: 2vw;
-			font-size: clamp(16px, 2vw, 24px);
+			font-size: clamp(12px, 2vw, 20px);
 		}
 		&__img {
-			width: clamp(50px, 10vw, 120px);
-			height: clamp(50px, 10vw, 120px);
+			width: clamp(50px, 10vw, 100px);
+			height: clamp(50px, 10vw, 100px);
 			position: relative;
 			left: 10vw;
 			top: 1vw;

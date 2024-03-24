@@ -35,7 +35,7 @@ function App() {
 						<strong>Наш чат-бот</strong>
 						<span className='main__heading__transparent'>
 							{" "}
-							служит медицинским ассистентом для ваших пациентов.
+							служит медицинским ассистентом для ваших пациентов
 						</span>
 					</h1>
 					<div className='main__btn__container'>

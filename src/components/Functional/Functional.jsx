@@ -45,6 +45,8 @@ export default function Functional() {
 					showThumbs={false}
 					showIndicators={false}
 					showStatus={false}
+					swipeable
+					emulateTouch
 					renderArrowNext={(clickHandler, hasNext) =>
 						hasNext && (
 							<button onClick={clickHandler} className='functional__btn'>
@@ -68,87 +70,68 @@ export default function Functional() {
 							</button>
 						)
 					}
-					renderArrowPrev={(clickHandler, hasNext) =>
-						hasNext && (
-							<button onClick={clickHandler} className='functional__btn'>
-								<svg
-									style={{ transform: "rotate(-180deg)", marginRight: 15 }}
-									role='img'
-									xmlns='http://www.w3.org/2000/svg'
-									viewBox='0 0 24 24'
-									aria-labelledby='arrowRightIconTitle'
-									stroke='#efefef'
-									strokeWidth='2'
-									strokeLinecap='square'
-									strokeLinejoin='miter'
-									fill='none'
-									color='#efefef'
-								>
-									{" "}
-									<path d='M15 18l6-6-6-6' /> <path d='M3 12h17' />{" "}
-									<path strokeLinecap='round' d='M21 12h-1' />{" "}
-								</svg>
-								Назад
-							</button>
-						)
-					}
+					renderArrowPrev={() => <></>}
 				>
-					<FunctionalCard
-						index={1}
-						title='Основное меню'
-						description='Для пациентов доступна основная информация о поликлинике в этих разделах'
-						image='/functional/1.png'
-					/>
-					<FunctionalCard
-						index={2}
-						title='Расписание работы'
-						description='Пример получения информации о работе "Доврачебного кабинета"'
-						image='/functional/2.webp'
-					/>
-					<FunctionalCard
-						index={3}
-						title='Получение документов'
-						description='Эта функция предлагает пользователям чат-бота краткие и понятные пошаговые инструкции для получения медицинских справок или карт.'
-						image='/functional/3.webp'
-					/>
-
-					<FunctionalCard
-						index={4}
-						title='Подписка на врача'
-						description='Эта функция позволяет пользователям быстро получать информацию о графике работы их участкового врача.'
-						image='/functional/4.png'
-					/>
-					<FunctionalCard
-						index={5}
-						title='Узнать, кто ваш врач'
-						description='Поиск участкового врача по адресу для быстрого определения и подписки на обновления.'
-						image='/functional/5.webp'
-					/>
-					<FunctionalCard
-						index={6}
-						title='Рассылка уведомлений'
-						description='Чат-бот отправляет сообщения подписчикам участкового врача для информирования о новостях, изменениях и предложениях.'
-						image='/functional/69.png'
-					/>
-
-					<FunctionalCard
-						index={7}
-						title='Форма обратной связи'
-						description='Пользователи чат-бота могут направлять свои жалобы и предложения непосредственно оператору поликлиники'
-						image='/functional/7.png'
-					/>
-					<FunctionalCard
-						index={8}
-						title='Запись или вызов врача'
-						description='Функция предлагает удобные варианты записи на приём к врачу или вызова врача на дом.'
-						image='/functional/8.png'
-					/>
-					<FunctionalCard
-						index={9}
-						title='Раздел заболеваний'
-						description='Этот раздел чат-бота предоставляет лёгкую и достоверную информацию о профилактике заболеваний на основе клинических рекомендаций.'
-						image='/functional/9.webp'
-					/>
+					<>
+						<FunctionalCard
+							index={1}
+							title='Основное меню'
+							description='Для пациентов доступна основная информация о поликлинике в этих разделах'
+							image='/functional/1.png'
+						/>
+						<FunctionalCard
+							index={2}
+							title='Расписание подразделений'
+							description='Пример получения информации о работе "Доврачебного кабинета"'
+							image='/functional/2.gif'
+						/>
+						<FunctionalCard
+							index={3}
+							title='Получение документов'
+							description='Эта функция предлагает пользователям чат-бота краткие и понятные пошаговые инструкции для получения медицинских справок или карт.'
+							image='/functional/3.gif'
+						/>
+					</>
+					<>
+						<FunctionalCard
+							index={4}
+							title='Подписка на врача'
+							description='Эта функция позволяет пользователям быстро получать информацию о графике работы их участкового врача.'
+							image='/functional/4.png'
+						/>
+						<FunctionalCard
+							index={5}
+							title='Узнать, кто ваш врач'
+							description='Поиск участкового врача по адресу для быстрого определения и подписки на обновления.'
+							image='/functional/5.gif'
+						/>
+						<FunctionalCard
+							index={6}
+							title='Рассылка уведомлений'
+							description='Чат-бот отправляет сообщения подписчикам участкового врача для информирования о новостях, изменениях и предложениях.'
+							image='/functional/69.png'
+						/>
+					</>
+					<>
+						<FunctionalCard
+							index={7}
+							title='Форма обратной связи'
+							description='Пользователи чат-бота могут направлять свои жалобы и предложения непосредственно оператору поликлиники'
+							image='/functional/7.png'
+						/>
+						<FunctionalCard
+							index={8}
+							title='Запись или вызов врача'
+							description='Функция предлагает удобные варианты записи на приём к врачу или вызова врача на дом.'
+							image='/functional/8.png'
+						/>
+						<FunctionalCard
+							index={9}
+							title='Раздел профилактик'
+							description='Этот раздел чат-бота предоставляет лёгкую и достоверную информацию о профилактике заболеваний на основе клинических рекомендаций.'
+							image='/functional/9.gif'
+						/>
+					</>
 				</Carousel>
 			</div>
 		</section>

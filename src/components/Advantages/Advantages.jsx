@@ -7,8 +7,8 @@ export default function Advantages() {
 		<section id='advantages' className='content__advantages'>
 			<div className='content__advantages__head'>
 				<h2 className='content__heading'>Чат-бот в поликлинике</h2>
-				<div className='content__note'>
-					<div className='content__note__text'>КЛЮЧ К ОПТИМИЗАЦИИ</div>
+				<div className='content__note --too-big'>
+					<div className='content__note__text '>КЛЮЧ К ОПТИМИЗАЦИИ</div>
 					<div className='content__note__img'>
 						<svg
 							width='52'
@@ -41,10 +41,7 @@ export default function Advantages() {
 					index={1}
 					text='Снижает нагрузку на колл-центр и регистратуру'
 				/>
-				<AdvantageItem
-					index={2}
-					text='Улучшение информирования законных представителей'
-				/>
+				<AdvantageItem index={2} text='Улучшает информирование пациентов' />
 				<AdvantageItem
 					index={3}
 					text='Оптимизирует маршрутизацию пациентов внутри медицинской организации'
@@ -53,7 +50,7 @@ export default function Advantages() {
 					<>
 						<AdvantageItem
 							index={4}
-							text='Улучшаем доступ к первичной медико-санитарной помощи'
+							text='Улучшает доступ к первичной медико-санитарной помощи'
 						/>
 						<AdvantageItem
 							index={5}

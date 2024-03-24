@@ -2,7 +2,11 @@ import React from "react";
 
 export default function FooterContacts({ isInFooter }) {
 	return (
-		<div className='footer__container'>
+		<div
+			className={
+				isInFooter ? "footer__container" : "footer__container --inmodal"
+			}
+		>
 			{isInFooter && (
 				<>
 					{" "}

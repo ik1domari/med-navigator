@@ -1,12 +1,12 @@
 .footer {
-	width: 88vw;
-	height: 8vh;
-	margin-top: 5vh;
+	width: 80vw;
+	height: 15vh;
+	margin-top: 10vh;
 	&__container {
 		margin-top: 5vh;
 		display: flex;
 		justify-content: space-between;
-		@media (max-width: 700px) {
+		@media (max-width: 1400px) {
 			display: grid;
 			grid-template-columns: 2fr 2fr;
 			grid-template-rows: repeat(2, 4vh);
@@ -15,31 +15,47 @@
 		}
 		&--text {
 			display: flex;
+
 			justify-content: space-between;
 			flex-wrap: wrap;
-			margin-top: 2vh;
+			margin-top: 4vh;
 			opacity: 0.5;
 			font-size: clamp(10px, 1vw, 16px);
+			@media (max-width: 930px) {
+				flex-direction: column;
+				text-align: center;
+			}
+		}
+		&.--inmodal {
+			display: grid;
+			grid-template-columns: 2fr 2fr;
+			grid-template-rows: repeat(2, 5vh);
+			grid-auto-flow: column;
+			gap: 3vw;
+			.footer__btn {
+				font-size: clamp(12px, 1.5vw, 20px);
+			}
 		}
 	}
 	&__btn {
 		color: #fff;
-		font-size: clamp(8px, 1.5vw, 20px);
+		font-size: clamp(10px, 1.5vw, 20px);
 		font-weight: 500;
 		background-color: rgba(47, 47, 47, 0.2);
-		border: 0.25vw solid rgba(255, 255, 255, 0.2);
+		border: 2px solid rgba(255, 255, 255, 0.2);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 1vw 2vw;
+		padding: 2vw;
 		transition: all 0.2s linear;
 		svg {
 			width: clamp(10px, 1vw, 25px);
 			height: clamp(10px, 1vw, 25px);
+			overflow: visible;
 		}
 		&__social {
-			width: clamp(16px, 1vw, 25px);
-			height: clamp(16px, 1vw, 25px);
+			width: clamp(18px, 1vw, 25px);
+			height: clamp(18px, 1vw, 25px);
 		}
 		&:hover {
 			background-color: rgba(47, 47, 47, 0.8);

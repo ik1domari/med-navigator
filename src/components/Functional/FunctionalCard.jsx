@@ -4,7 +4,7 @@ import { AppContext } from "../../App";
 export default function FunctionalCard({ index, title, description, image }) {
 	const { setOpenImage } = React.useContext(AppContext);
 	return index % 2 !== 0 ? (
-		<div className='functional__card'>
+		<div className='functional__card no-select'>
 			<div
 				className='functional__card__image__frame'
 				onClick={() => setOpenImage({ open: true, image: image })}
@@ -19,7 +19,7 @@ export default function FunctionalCard({ index, title, description, image }) {
 			</div>
 		</div>
 	) : (
-		<div className='functional__card'>
+		<div className='functional__card no-select'>
 			<div className='functional__card__text'>
 				<h3 className='functional__card__text__heading'>
 					<span className='functional__card__text__braces'>//</span> {title}

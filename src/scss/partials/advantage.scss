@@ -3,9 +3,9 @@
 	margin-top: 4vh;
 	font-weight: 500;
 	&__number {
-		font-size: clamp(25px, 4vw, 50px);
-		width: clamp(50px, 10vw, 100px);
-		height: clamp(80px, 10vw, 100px);
+		font-size: clamp(25px, 4vw, 36px);
+		width: clamp(50px, 10vw, 80px);
+		height: clamp(80px, 20vw, 80px);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -13,13 +13,12 @@
 		border: 2px solid #424242;
 	}
 	&__text {
-		font-size: clamp(14px, 2vw, 25px);
+		height: clamp(80px, 20vw, 80px);
+		font-size: clamp(14px, 3vw, 18px);
 		border-bottom: 2px solid #424242;
-		width: 25vw;
-		&__text {
-			margin-top: 0.5vh;
-			margin-left: 2vw;
-			width: 70vw;
-		}
+		width: 70vw;
+		padding-left: 2vw;
+		display: flex;
+		align-items: center;
 	}
 }

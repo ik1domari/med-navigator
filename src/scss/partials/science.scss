@@ -1,19 +1,22 @@
 .science {
-	margin-top: 8vh;
+	margin-top: 10vh;
 	&__blocks {
 		margin-top: 4vh;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		@media (max-width: 600px) {
+			padding: 0 12.5vw;
+		}
 	}
 	&__block {
-		width: 28vw;
-		height: 28vw;
+		width: 25vw;
+		height: 25vw;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		background-color: rgba(47, 47, 47, 0.2);
-		outline: 0.33vw solid rgba(255, 255, 255, 0.2);
+		border: 2px solid rgba(255, 255, 255, 0.2);
 		font-size: clamp(50px, 10vw, 100px);
 		font-weight: 600;
 		position: relative;
@@ -28,11 +31,20 @@
 			right: 1vw;
 			top: 1vw;
 		}
+		@media (max-width: 600px) {
+			width: 50vw;
+			height: 50vw;
+			&::after {
+				content: "";
+				width: 3vw;
+				height: 3vw;
+			}
+		}
 		&.--active {
 			background-color: #fff;
 			color: #000;
 			outline: none;
-			font-size: clamp(6px, 1.6vw, 30px);
+			font-size: clamp(14px, 1.6vw, 30px);
 			font-weight: 400;
 			padding: 5vw;
 			&::after {
@@ -44,5 +56,8 @@
 			width: clamp(50px, 10vw, 100px);
 			height: clamp(50px, 10vw, 100px);
 		}
+	}
+	.carousel .slider-wrapper {
+		overflow: visible !important;
 	}
 }

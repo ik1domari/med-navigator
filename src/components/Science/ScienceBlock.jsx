@@ -7,7 +7,10 @@ export default function ScienceBlock({ number, text, image }) {
 			{text}
 		</div>
 	) : (
-		<div className='science__block' onClick={() => setActive(!active)}>
+		<div
+			className='science__block no-select'
+			onClick={() => setActive(!active)}
+		>
 			{number || <img src={image} alt={text}></img>}
 		</div>
 	);

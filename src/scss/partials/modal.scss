@@ -14,8 +14,8 @@
 	background-color: rgba(26, 26, 26, 0.801);
 	&__content {
 		border-radius: 2vw;
-		width: 80vw;
-		height: 80vh;
+		// width: 80vw;
+		// height: 80vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -29,12 +29,12 @@
 	}
 	&__text {
 		margin-top: 5vh;
-		font-size: clamp(10px, 2vw, 24px);
+		font-size: clamp(12px, 2vw, 24px);
 		font-weight: 500;
 		opacity: 0.5;
 	}
 	&__heading {
-		font-size: clamp(20px, 4vw, 30px);
+		font-size: clamp(24px, 4vw, 30px);
 		font-weight: 700;
 		color: #fff;
 	}
@@ -50,6 +50,6 @@
 		overflow: hidden;
 	}
 	&__image {
-		height: clamp(200px, 100vw, 700px);
+		height: clamp(300px, 80vw, 700px);
 	}
 }

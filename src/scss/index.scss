@@ -38,6 +38,7 @@ body {
 		background-size: cover;
 		background-image: url("../img/main-background.png");
 		position: absolute;
+		background-position: 225vw;
 	}
 	&__hand {
 		$handWidth: clamp(115px, 40vw, 800px);
@@ -49,32 +50,34 @@ body {
 		right: 0;
 		background-repeat: no-repeat;
 		background-size: $handWidth $handHeight;
+
 		background-image: url("../img/main-hand.png");
 		@media (max-width: 1080px) {
 			right: 0;
-			bottom: 20vh;
+			bottom: 10vh;
 			height: 50vh;
 			width: 35vw;
+			height: 50vh;
 			background-size: 60vw 50vh;
 		}
 		@media (max-width: 530px) {
-			background-size: 60vw 30vh;
+			background-size: 60vw 25vh;
 		}
 	}
 	&__heading {
 		width: 40vw;
 		margin-top: 33vh;
 		margin-left: 6vw;
-		font-size: clamp(16px, 5.8vw, 50px);
+		font-size: clamp(16px, 5.8vw, 40px);
 		&__transparent {
 			opacity: 0.5;
 		}
 	}
 	&__btn {
-		width: clamp(50px, 60vw, 600px);
-		padding: 3vw;
+		width: clamp(50px, 60vw, 500px);
+		padding: 2vw;
 		margin-top: 3vh;
-		font-size: clamp(14px, 1.5vw, 25px);
+		font-size: clamp(12px, 2vw, 16px);
 		font-weight: 500;
 		white-space: nowrap;
 		color: #fff;
@@ -92,7 +95,7 @@ body {
 			padding: 4vw;
 		}
 		@media (max-width: 500px) {
-			padding: 5vw;
+			padding: 6vw;
 		}
 		div {
 			position: absolute;
