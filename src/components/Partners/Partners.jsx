@@ -12,16 +12,16 @@ export default function Partners() {
 			<div className='partners__cards'>
 				<Partner
 					title='«Фонд содействия развитию малых форм предприятий в научно-технической сфере»'
-					image='/partners/fsi.png'
+					image='/partners/fsi.webp'
 				/>
 				<Partner
 					title='ФГБОУ ВО Тюменский ГМУ
 Минздрава России'
-					image='/partners/tmu.png'
+					image='/partners/tmu.webp'
 				/>
 				<Partner
 					title='ГАУЗ ТО «Городская поликлиника No 5»'
-					image='/partners/sz.png'
+					image='/partners/sz.webp'
 				/>
 			</div>
 		</section>

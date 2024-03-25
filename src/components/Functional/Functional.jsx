@@ -77,19 +77,22 @@ export default function Functional() {
 							index={1}
 							title='Основное меню'
 							description='Для пациентов доступна основная информация о поликлинике в этих разделах'
-							image='/functional/1.png'
+							image='/functional/1.webp'
+							thumbs='/functional/1.webp'
 						/>
 						<FunctionalCard
 							index={2}
 							title='Расписание подразделений'
 							description='Пример получения информации о работе "Доврачебного кабинета"'
 							image='/functional/2.gif'
+							thumbs='/functional/2.webp'
 						/>
 						<FunctionalCard
 							index={3}
 							title='Получение документов'
 							description='Эта функция предлагает пользователям чат-бота краткие и понятные пошаговые инструкции для получения медицинских справок или карт.'
 							image='/functional/3.gif'
+							thumbs='/functional/3.webp'
 						/>
 					</>
 					<>
@@ -97,19 +100,22 @@ export default function Functional() {
 							index={4}
 							title='Подписка на врача'
 							description='Эта функция позволяет пользователям быстро получать информацию о графике работы их участкового врача.'
-							image='/functional/4.png'
+							image='/functional/4.webp'
+							thumbs='/functional/4.webp'
 						/>
 						<FunctionalCard
 							index={5}
 							title='Узнать, кто ваш врач'
 							description='Поиск участкового врача по адресу для быстрого определения и подписки на обновления.'
 							image='/functional/5.gif'
+							thumbs='/functional/5.webp'
 						/>
 						<FunctionalCard
 							index={6}
 							title='Рассылка уведомлений'
 							description='Чат-бот отправляет сообщения подписчикам участкового врача для информирования о новостях, изменениях и предложениях.'
-							image='/functional/69.png'
+							image='/functional/6.webp'
+							thumbs='/functional/6.webp'
 						/>
 					</>
 					<>
@@ -117,19 +123,22 @@ export default function Functional() {
 							index={7}
 							title='Форма обратной связи'
 							description='Пользователи чат-бота могут направлять свои жалобы и предложения непосредственно оператору поликлиники'
-							image='/functional/7.png'
+							image='/functional/7.webp'
+							thumbs='/functional/7.webp'
 						/>
 						<FunctionalCard
 							index={8}
 							title='Запись или вызов врача'
 							description='Функция предлагает удобные варианты записи на приём к врачу или вызова врача на дом.'
-							image='/functional/8.png'
+							image='/functional/8.webp'
+							thumbs='/functional/8.webp'
 						/>
 						<FunctionalCard
 							index={9}
 							title='Раздел профилактик'
 							description='Этот раздел чат-бота предоставляет лёгкую и достоверную информацию о профилактике заболеваний на основе клинических рекомендаций.'
 							image='/functional/9.gif'
+							thumbs='/functional/9.webp'
 						/>
 					</>
 				</Carousel>

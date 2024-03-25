@@ -88,6 +88,7 @@ export default function Advantages() {
 					<>
 						Смотреть далее
 						<svg
+							style={{ transform: "rotate(90deg)" }}
 							role='img'
 							xmlns='http://www.w3.org/2000/svg'
 							viewBox='0 0 24 24'
