@@ -16,6 +16,7 @@ export const AppContext = createContext({});
 function App() {
 	const [openModal, setOpenModal] = useState(false);
 	const [openImage, setOpenImage] = useState({ open: false, image: "" });
+	const year = new Date().getFullYear();
 	if (openModal || openImage.open) {
 		document.body.style.overflowY = "hidden";
 	} else {
@@ -49,7 +50,7 @@ function App() {
 							О ПРОДУКТЕ
 						</h2>
 						<div className='content__head__line' />
-						<div className='content__head__copyright'>&copy; 2024</div>
+						<div className='content__head__copyright'>&copy; {year}</div>
 					</div>
 					<div className='content__quote'>
 						<blockquote>

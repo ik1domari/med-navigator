@@ -27,21 +27,33 @@ export default function BurgerMenu({ setBurgerOpen }) {
 					</svg>
 				</button>
 				<ul className='burger__list'>
-					<li>
+					<li
+						onClick={() => {
+							setBurgerOpen(false);
+						}}
+					>
 						<HeaderLink
 							title='О ПРОДУКТЕ'
 							dest='#about'
 							className='burger__list__link'
 						/>
 					</li>
-					<li>
+					<li
+						onClick={() => {
+							setBurgerOpen(false);
+						}}
+					>
 						<HeaderLink
 							title='ФУНКЦИИ БОТА'
 							dest='#functional'
 							className='burger__list__link'
 						/>
 					</li>
-					<li>
+					<li
+						onClick={() => {
+							setBurgerOpen(false);
+						}}
+					>
 						<HeaderLink
 							title='ЦЕНА'
 							dest='#price'
@@ -49,7 +61,13 @@ export default function BurgerMenu({ setBurgerOpen }) {
 						/>
 					</li>
 				</ul>
-				<button className='burger__link' onClick={() => setOpenModal(true)}>
+				<button
+					className='burger__link'
+					onClick={() => {
+						setOpenModal(true);
+						setBurgerOpen(false);
+					}}
+				>
 					Контакты
 					<svg
 						width='16'
