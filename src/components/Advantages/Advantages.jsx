@@ -8,7 +8,7 @@ export default function Advantages() {
 			<div className='content__advantages__head'>
 				<h2 className='content__heading'>Чат-бот в поликлинике</h2>
 				<div className='content__note --too-big'>
-					<div className='content__note__text '>КЛЮЧ К ОПТИМИЗАЦИИ</div>
+					<div className='content__note__text '>Ключ к оптимизации</div>
 					<div className='content__note__img'>
 						<svg
 							width='52'

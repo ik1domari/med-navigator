@@ -15,7 +15,7 @@ export default function Science() {
 				</h2>
 				<div className='content__head__line' />
 				<div className='content__note'>
-					<div className='content__note__text'>ПРЕИМУЩЕСТВА</div>
+					<div className='content__note__text'>Преимущества</div>
 				</div>
 			</div>
 

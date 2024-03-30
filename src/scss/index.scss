@@ -20,12 +20,16 @@ body {
 }
 
 * {
-	letter-spacing: 0.22vw;
-	text-transform: uppercase;
+	letter-spacing: 0.1vw;
+	line-height: 1.2;
 	&::selection,
 	&::-moz-selection {
 		background: rgba(116, 230, 255, 0.5);
 	}
+}
+
+h2 {
+	text-transform: uppercase;
 }
 
 .main {
@@ -36,7 +40,7 @@ body {
 		width: 100vw;
 		height: 100vh;
 		background-size: cover;
-		background-image: url("../img/main-background.webp");
+		background-image: url("../img/main-background.png");
 		position: absolute;
 		background-position: 225vw;
 	}

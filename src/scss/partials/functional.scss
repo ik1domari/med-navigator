@@ -58,7 +58,7 @@
 		width: clamp(188px, 50vw, 450px);
 		color: #fff;
 		font-weight: 500;
-		font-size: clamp(10px, 2vw, 22px);
+		font-size: clamp(12px, 2vw, 22px);
 		padding: 20px 1vw;
 		outline: 0.2vw solid rgba(255, 255, 255, 0.2);
 		background: rgba(217, 217, 217, 0.01);
@@ -67,8 +67,8 @@
 		align-items: center;
 		transition: all 0.2s linear;
 		svg {
-			width: clamp(10px, 2vw, 25px);
-			height: clamp(10px, 2vw, 25px);
+			width: clamp(12px, 2vw, 25px);
+			height: clamp(12px, 2vw, 25px);
 			padding: 0;
 			margin-left: 5px;
 		}

@@ -23,6 +23,7 @@ export default function FooterContacts({ isInFooter }) {
 					>
 						Вернуться
 						<svg
+							className='footer__btn__return'
 							width='25'
 							height='25'
 							viewBox='0 0 25 25'

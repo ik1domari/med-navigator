@@ -1,6 +1,8 @@
 {
-	"name": "Медицинский навигатор",
+	"name": "Медицинский навигатор | Разработка чат-ботов для медицинских организаций",
 	"short_name": "Медицинский навигатор",
+	"lang": "ru",
+	"start_url": "/",
 	"icons": [
 		{
 			"src": "/android-chrome-192x192.png",
@@ -23,7 +25,13 @@
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#74e6ff",
-	"background_color": "#74e6ff",
+	"categories": [
+		"Медицинские технологии",
+		"Медицина",
+		"Чат-боты",
+		"Telegram-боты"
+	],
+	"theme_color": "#0e1213",
+	"background_color": "#0e1213",
 	"display": "standalone"
 }

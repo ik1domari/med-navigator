@@ -39,7 +39,7 @@ export default function Header() {
 				})}
 			</nav>
 			<button className='header__link' onClick={() => setOpenModal(true)}>
-				Контакты
+				КОНТАКТЫ
 				<svg
 					width='16'
 					height='16'

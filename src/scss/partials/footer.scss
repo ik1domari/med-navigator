@@ -48,14 +48,15 @@
 		justify-content: center;
 		padding: 2vw;
 		transition: all 0.2s linear;
-		svg {
-			width: clamp(10px, 1vw, 25px);
-			height: clamp(10px, 1vw, 25px);
+		&__return {
+			width: clamp(10px, 1vw, 20px);
+			height: clamp(10px, 1vw, 20px);
+			margin-left: 5px;
 			overflow: visible;
 		}
 		&__social {
-			width: clamp(18px, 1vw, 25px);
-			height: clamp(18px, 1vw, 25px);
+			width: clamp(12px, 1.5vw, 25px);
+			height: clamp(12px, 1.5vw, 25px);
 		}
 		&:hover {
 			background-color: rgba(47, 47, 47, 0.8);

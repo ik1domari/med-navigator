@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
@@ -14,16 +16,65 @@
 			content="Профессиональная разработка медицинских ассистентов для повышения уровня медицинского обслуживания"
 		/>
 		<link rel="manifest" href="/manifest.json" />
-		<title>Медицинский навигатор</title>
+		<title>
+			Медицинский навигатор | Разработка чат-ботов для медицинских организаций
+		</title>
 	</head>
 	<body>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (m, e, t, r, i, k, a) {
+				m[i] =
+					m[i] ||
+					function () {
+						(m[i].a = m[i].a || []).push(arguments);
+					};
+				m[i].l = 1 * new Date();
+				for (var j = 0; j < document.scripts.length; j++) {
+					if (document.scripts[j].src === r) {
+						return;
+					}
+				}
+				(k = e.createElement(t)),
+					(a = e.getElementsByTagName(t)[0]),
+					(k.async = 1),
+					(k.src = r),
+					a.parentNode.insertBefore(k, a);
+			})(
+				window,
+				document,
+				"script",
+				"https://mc.yandex.ru/metrika/tag.js",
+				"ym"
+			);
+
+			ym(96892003, "init", {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true,
+			});
+		</script>
+		<noscript
+			><div>
+				<img
+					src="https://mc.yandex.ru/watch/96892003"
+					style="position: absolute; left: -9999px"
+					alt=""
+				/></div
+		></noscript>
+		<!-- /Yandex.Metrika counter -->
 		<noscript>
 			<style>
+				* {
+					letter-spacing: 0;
+					text-transform: none;
+				}
 				.noscript__block {
-					margin: 0 auto;
+					margin: 10vh auto;
 					padding: 5vw;
 					width: 50vw;
-					height: 20vh;
+					height: 30vh;
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -50,6 +101,8 @@
 				}
 				body {
 					background-color: #333;
+					width: auto;
+					height: auto;
 				}
 			</style>
 			<div class="noscript__block">

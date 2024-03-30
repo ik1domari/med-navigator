@@ -22,7 +22,7 @@ export default function Functional() {
 					</svg>
 				</h2>
 				<div className='content__note'>
-					<div className='content__note__text'>ИНСТРУКЦИЯ</div>
+					<div className='content__note__text'>Инструкция</div>
 					<div className='content__note__img'>
 						<svg
 							width='69'

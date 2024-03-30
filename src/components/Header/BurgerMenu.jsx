@@ -68,7 +68,7 @@ export default function BurgerMenu({ setBurgerOpen }) {
 						setBurgerOpen(false);
 					}}
 				>
-					Контакты
+					КОНТАКТЫ
 					<svg
 						width='16'
 						height='16'

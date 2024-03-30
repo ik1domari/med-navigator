@@ -57,13 +57,15 @@
 		blockquote {
 			width: 80vw;
 			padding: 6vh 4vw;
-			font-size: clamp(16px, 2vw, 20px);
+			font-size: clamp(12px, 2vw, 20px);
+			line-height: 1.2;
 			background-color: rgba(197, 197, 197, 0.05);
 			border-bottom: 0.35vw solid #fff;
 			border-radius: 17px 17px 0 0;
 		}
 		&__text {
-			font-size: clamp(16px, 2vw, 20px);
+			font-size: clamp(12px, 2vw, 20px);
+			line-height: 1.2;
 			font-weight: 500;
 			margin: 5vh 4vw;
 		}
