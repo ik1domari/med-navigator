@@ -150,7 +150,7 @@ export default function Development() {
 								className='development__slider__arrow --left'
 								onClick={clickHandler}
 							>
-								<img src={leftArr} alt='leftArr' />
+								<img src={leftArr} alt='' />
 							</button>
 						)
 					}
@@ -160,7 +160,7 @@ export default function Development() {
 								className='development__slider__arrow --right'
 								onClick={clickHandler}
 							>
-								<img src={rightArr} alt='rightArr' />
+								<img src={rightArr} alt='' />
 							</button>
 						)
 					}
