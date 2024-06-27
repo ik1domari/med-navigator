@@ -17,8 +17,8 @@ export default function DevBlock({ isBlack, isIcon, text }) {
 						<path
 							d='M2 45.2L26.5 2V30.8H44L19.5 74V45.2H2Z'
 							stroke='#F8F8F8'
-							stroke-width='3'
-							stroke-linejoin='round'
+							strokeWidth='3'
+							strokeLinejoin='round'
 						/>
 					</svg>
 				) : (

@@ -33,7 +33,7 @@ export default function FooterContacts({ isInFooter }) {
 							<path
 								d='M1 23L24 1M24 1V23M24 1H1'
 								stroke='#F4F4F4'
-								stroke-width='2'
+								strokeWidth='2'
 							/>
 						</svg>
 					</button>
