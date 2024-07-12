@@ -1,4 +1,5 @@
 .stages {
+	$border-width: clamp(1px, 0.35vw, 3px);
 	margin-top: 10vh;
 	&__blocks {
 		margin-top: 3vh;
@@ -21,11 +22,11 @@
 			justify-content: center;
 			align-items: center;
 			background-color: rgba(217, 217, 217, 0.01);
-			outline: 0.35vw solid #424242;
+			outline: $border-width solid #424242;
 			border-radius: 0 7px 0 0;
 		}
 		&__line {
-			border-bottom: 0.35vw solid #424242;
+			border-bottom: $border-width solid #424242;
 			width: 20vw;
 		}
 		&__text {

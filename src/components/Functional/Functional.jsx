@@ -143,7 +143,7 @@ export default function Functional() {
 					</>
 				</Carousel>
 				<a
-					href='https://t.me/BabyDocBot'
+					href='https://t.me/med_navigator_landing_bot'
 					target='_blank'
 					className='functional__btn example'
 				>

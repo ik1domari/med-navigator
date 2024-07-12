@@ -12,6 +12,10 @@
 @import "partials/footer";
 @import "partials/modal";
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: #0e1213;
 	overflow-x: hidden;
@@ -54,12 +58,19 @@ h2 {
 		right: 0;
 		background-repeat: no-repeat;
 		background-size: $handWidth $handHeight;
-
 		background-image: url("../img/main-hand.webp");
+		animation: show 0.8s ease-in-out;
+		@keyframes show {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
 		@media (max-width: 1080px) {
 			right: 0;
 			bottom: 8vh;
-			height: 50vh;
 			width: 35vw;
 			height: 50vh;
 			background-size: 60vw 50vh;
@@ -73,6 +84,7 @@ h2 {
 		margin-top: 33vh;
 		margin-left: 6vw;
 		font-size: clamp(16px, 5.8vw, 40px);
+		animation: show 0.8s ease-in-out;
 		&__transparent {
 			opacity: 0.5;
 		}
@@ -92,6 +104,7 @@ h2 {
 		align-items: center;
 		position: relative;
 		transition: box-shadow 0.25s ease-in-out;
+		animation: show 0.8s ease-in-out;
 		&__container {
 			margin-left: 6vw;
 		}

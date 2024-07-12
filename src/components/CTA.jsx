@@ -1,10 +1,6 @@
-import React from "react";
-import { AppContext } from "../App";
-
 export default function CTA() {
-	const { setOpenModal } = React.useContext(AppContext);
 	return (
-		<button className='main__btn' onClick={() => setOpenModal(true)}>
+		<a className='main__btn' href="https://t.me/med_navigator_landing_bot" target="_blank">
 			<div>
 				ЗАКАЗАТЬ РАЗРАБОТКУ
 				<svg
@@ -23,6 +19,6 @@ export default function CTA() {
 					/>
 				</svg>
 			</div>
-		</button>
+		</a>
 	);
 }
