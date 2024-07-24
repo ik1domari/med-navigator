@@ -31,18 +31,16 @@ function App() {
 			{openImage.open && <ImageModal image={openImage.image} />}
 			<Header />
 			<main className='main'>
-				<section className='main__background'>
-					<h1 className='main__heading'>
-						<strong>Наш чат-бот</strong>
-						<span className='main__heading__transparent'>
-							{" "}
-							служит медицинским ассистентом для ваших пациентов
-						</span>
-					</h1>
-					<div className='main__btn__container'>
-						<CTA />
-					</div>
-				</section>
+				<section className='main__background'></section>
+				<h1 className='main__heading'>
+					<strong>Наш чат-бот</strong>{" "}
+					<span className='main__heading__transparent'>
+						служит медицинским ассистентом для ваших пациентов
+					</span>
+				</h1>
+				<div className='main__btn__container'>
+					<CTA />
+				</div>
 				<div className='main__hand' />
 				<section className='content'>
 					<div className='content__head'>

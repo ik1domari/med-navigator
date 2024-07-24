@@ -4,14 +4,24 @@ import { AppContext } from "../App";
 
 export default function ContactModal() {
 	const { setOpenModal } = React.useContext(AppContext);
+	const [closing, setClosing] = React.useState(false);
+	const closeModal = () => {
+		setClosing(true);
+		setTimeout(() => {
+			setOpenModal(false);
+		}, 200);
+	};
 
 	return (
-		<div className='modal' onClick={() => setOpenModal(false)}>
-			<div className='modal__content' onClick={(e) => e.stopPropagation()}>
+		<div className='modal' onClick={closeModal}>
+			<div
+				className={closing ? "modal__content closing" : "modal__content"}
+				onClick={(e) => e.stopPropagation()}
+			>
 				<h2 className='modal__heading'>Связаться с нами</h2>
 				<div className='modal__text'>Выберите удобный способ связи:</div>
 				<svg
-					onClick={() => setOpenModal(false)}
+					onClick={closeModal}
 					className='modal__close'
 					role='img'
 					xmlns='http://www.w3.org/2000/svg'

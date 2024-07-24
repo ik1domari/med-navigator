@@ -1,3 +1,4 @@
+$animationTime: 0.2s;
 .modal {
 	position: fixed;
 	top: 0;
@@ -12,10 +13,17 @@
 	text-align: center;
 	z-index: 999;
 	background-color: rgba(26, 26, 26, 0.801);
+	animation: fadeIn $animationTime ease-in-out;
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 	&__content {
 		border-radius: 2vw;
-		// width: 80vw;
-		// height: 80vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -26,6 +34,25 @@
 		padding: 5vw;
 		outline: 0.3vw solid #333;
 		box-shadow: 20px 20px 20px rgba(26, 26, 26, 0.801);
+		animation: showModal $animationTime ease-in-out;
+		transition: all $animationTime ease-in-out;
+		&.closing {
+			transform: scale(0);
+			transform: translateY(5%);
+			opacity: 0;
+		}
+		@keyframes showModal {
+			0% {
+				transform: scale(0);
+				transform: translateY(5%);
+				opacity: 0;
+			}
+			100% {
+				transform: scale(1);
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
 	}
 	&__text {
 		margin-top: 5vh;

@@ -2,9 +2,11 @@
 	position: absolute;
 	top: 100vh;
 	width: 100%;
+	z-index: 100;
 	padding: 0 10vw 6vh;
 	background: url("../img/bg.webp") repeat;
 	background-size: cover;
+	background-color: #0e1213;
 	overflow: hidden;
 	&__heading {
 		font-size: clamp(18px, 4vw, 32px);
