@@ -1,82 +1,82 @@
 $animationTime: 0.2s;
 .modal {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	overflow: hidden;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	text-align: center;
-	z-index: 999;
-	background-color: rgba(26, 26, 26, 0.801);
-	animation: fadeIn $animationTime ease-in-out;
-	@keyframes fadeIn {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-	&__content {
-		border-radius: 2vw;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background-color: #222222;
-		position: relative;
-		z-index: 1000;
-		padding: 5vw;
-		outline: 0.3vw solid #333;
-		box-shadow: 20px 20px 20px rgba(26, 26, 26, 0.801);
-		animation: showModal $animationTime ease-in-out;
-		transition: all $animationTime ease-in-out;
-		&.closing {
-			transform: scale(0);
-			transform: translateY(5%);
-			opacity: 0;
-		}
-		@keyframes showModal {
-			0% {
-				transform: scale(0);
-				transform: translateY(5%);
-				opacity: 0;
-			}
-			100% {
-				transform: scale(1);
-				transform: translateY(0);
-				opacity: 1;
-			}
-		}
-	}
-	&__text {
-		margin-top: 5vh;
-		font-size: clamp(12px, 2vw, 24px);
-		font-weight: 500;
-		opacity: 0.5;
-	}
-	&__heading {
-		font-size: clamp(24px, 4vw, 30px);
-		font-weight: 700;
-		color: #fff;
-	}
-	&__close {
-		width: clamp(25px, 4vw, 50px);
-		height: clamp(25px, 4vw, 50px);
-		position: absolute;
-		top: 1vw;
-		right: 1vw;
-		cursor: pointer;
-	}
-	body {
-		overflow: hidden;
-	}
-	&__image {
-		height: clamp(300px, 80vw, 700px);
-	}
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  z-index: 999;
+  background-color: rgba(26, 26, 26, 0.801);
+  animation: fadeIn $animationTime ease-in-out;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  &__content {
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    position: relative;
+    z-index: 1000;
+    padding: 50px;
+    outline: 2px solid #333;
+    box-shadow: 20px 20px 20px rgba(26, 26, 26, 0.801);
+    animation: showModal $animationTime ease-in-out;
+    transition: all $animationTime ease-in-out;
+    &.closing {
+      transform: scale(0);
+      transform: translateY(5%);
+      opacity: 0;
+    }
+    @keyframes showModal {
+      0% {
+        transform: scale(0);
+        transform: translateY(5%);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+  &__text {
+    margin-top: 5vh;
+    font-size: clamp(12px, 2vw, 24px);
+    font-weight: 500;
+    opacity: 0.5;
+  }
+  &__heading {
+    font-size: clamp(24px, 4vw, 30px);
+    font-weight: 700;
+    color: #fff;
+  }
+  &__close {
+    width: clamp(25px, 4vw, 50px);
+    height: clamp(25px, 4vw, 50px);
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    cursor: pointer;
+  }
+  body {
+    overflow: hidden;
+  }
+  &__image {
+    height: clamp(300px, 80vw, 700px);
+  }
 }

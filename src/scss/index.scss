@@ -1,151 +1,168 @@
+@use "sass:meta";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import "partials/reset";
-@import "partials/header";
-@import "partials/burgerMenu";
-@import "partials/content";
-@import "partials/functional";
-@import "partials/advantage";
-@import "partials/development";
-@import "partials/science";
-@import "partials/stages";
-@import "partials/partners";
-@import "partials/footer";
-@import "partials/modal";
+@include meta.load-css("partials/reset");
+@include meta.load-css("partials/header");
+@include meta.load-css("partials/burgerMenu");
+@include meta.load-css("partials/content");
+@include meta.load-css("partials/functional");
+@include meta.load-css("partials/advantage");
+@include meta.load-css("partials/development");
+@include meta.load-css("partials/science");
+@include meta.load-css("partials/stages");
+@include meta.load-css("partials/partners");
+@include meta.load-css("partials/footer");
+@include meta.load-css("partials/modal");
+@include meta.load-css("partials/orderModal");
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  $scrollbar-radius: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: $scrollbar-radius;
+  background-color: #111;
+  &-thumb {
+    background-color: #666;
+    border-radius: $scrollbar-radius;
+    &:hover {
+      background-color: #777777;
+    }
+  }
 }
 
 body {
-	background-color: #0e1213;
-	overflow-x: hidden;
-	font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
-	color: #fff;
+  background-color: #0e1213;
+  overflow-x: hidden;
+  font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 
 * {
-	letter-spacing: 0.1vw;
-	line-height: 1.2;
-	&::selection,
-	&::-moz-selection {
-		background: rgba(116, 230, 255, 0.5);
-	}
+  letter-spacing: 0.1vw;
+  line-height: 1.2;
+  &::selection,
+  &::-moz-selection {
+    background: rgba(116, 230, 255, 0.5);
+  }
 }
 
 h2 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .main {
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-	&__background {
-		width: 100vw;
-		height: 100vh;
-		background-size: cover;
-		background-image: url("../img/main-background.png");
-		position: fixed;
-		background-position: 225vw;
-	}
-	&__hand {
-		$handWidth: clamp(115px, 40vw, 800px);
-		$handHeight: clamp(100px, 70vh, 1000px);
-		width: $handWidth;
-		height: $handHeight;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		background-repeat: no-repeat;
-		background-size: $handWidth $handHeight;
-		background-image: url("../img/main-hand.webp");
-		animation: show 0.8s ease-in-out;
-		@keyframes show {
-			0% {
-				opacity: 0;
-			}
-			100% {
-				opacity: 1;
-			}
-		}
-		@media (max-width: 1080px) {
-			right: 0;
-			bottom: 8vh;
-			width: 35vw;
-			height: 50vh;
-			background-size: 60vw 50vh;
-		}
-		@media (max-width: 530px) {
-			background-size: 60vw 25vh;
-		}
-	}
-	&__heading {
-		width: 40vw;
-		margin-top: 33vh;
-		margin-left: 6vw;
-		position: relative;
-		font-size: clamp(16px, 5.8vw, 40px);
-		animation: show 0.8s ease-in-out;
-		&__transparent {
-			opacity: 0.5;
-		}
-	}
-	&__btn {
-		width: clamp(50px, 60vw, 500px);
-		padding: 2vw;
-		margin-top: 3vh;
-		font-size: clamp(12px, 2vw, 16px);
-		font-weight: 500;
-		white-space: nowrap;
-		color: #fff;
-		outline: 2px solid rgba(255, 255, 255, 0.2);
-		background: transparent;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		transition: box-shadow 0.25s ease-in-out;
-		animation: show 0.8s ease-in-out;
-		&__container {
-			margin-left: 6vw;
-		}
-		@media (max-width: 871px) {
-			padding: 4vw;
-		}
-		@media (max-width: 500px) {
-			padding: 6vw;
-		}
-		div {
-			position: absolute;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			svg {
-				width: clamp(5px, 2vw, 25px);
-				padding: 0;
-				margin-left: 5px;
-			}
-		}
-		&::before {
-			content: "";
-			position: absolute;
-			background: inherit;
-			z-index: 0;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			box-shadow: inset 0 0 0 3000px rgba(47, 47, 47, 0.2);
-			backdrop-filter: blur(10px);
-		}
-		span {
-			position: absolute;
-			z-index: 1;
-			top: 50%;
-			left: 50%;
-		}
-		&:hover {
-			box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-		}
-	}
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  &__background {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("/main-background.png");
+    position: fixed;
+    background-position: 225vw;
+  }
+  &__hand {
+    $handWidth: clamp(115px, 40vw, 800px);
+    $handHeight: clamp(100px, 70vh, 1000px);
+    width: $handWidth;
+    height: $handHeight;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: $handWidth $handHeight;
+    background-image: url("/main-hand.webp");
+    animation: show 0.8s ease-in-out;
+    @keyframes show {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @media (max-width: 1080px) {
+      right: 0;
+      bottom: 8vh;
+      width: 35vw;
+      height: 50vh;
+      background-size: 60vw 50vh;
+    }
+    @media (max-width: 530px) {
+      background-size: 60vw 25vh;
+    }
+  }
+  &__heading {
+    width: 40vw;
+    margin-top: 33vh;
+    margin-left: 6vw;
+    position: relative;
+    font-size: clamp(16px, 5.8vw, 40px);
+    animation: show 0.8s ease-in-out;
+    &__transparent {
+      opacity: 0.5;
+    }
+  }
+  &__btn {
+    width: clamp(50px, 60vw, 500px);
+    padding: 2vw;
+    margin-top: 3vh;
+    font-size: clamp(12px, 2vw, 16px);
+    font-weight: 500;
+    white-space: nowrap;
+    color: #fff;
+    outline: 2px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: box-shadow 0.25s ease-in-out;
+    animation: show 0.8s ease-in-out;
+    &__container {
+      margin-left: 6vw;
+    }
+    @media (max-width: 871px) {
+      padding: 4vw;
+    }
+    @media (max-width: 500px) {
+      padding: 6vw;
+    }
+    div {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: clamp(5px, 2vw, 25px);
+        padding: 0;
+        margin-left: 5px;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background: inherit;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      box-shadow: inset 0 0 0 3000px rgba(47, 47, 47, 0.2);
+      backdrop-filter: blur(10px);
+    }
+    span {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+    }
+    &:hover {
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+  }
 }
